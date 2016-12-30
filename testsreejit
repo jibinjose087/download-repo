@@ -1,0 +1,1 @@
+It’s great that Jenkins supports authentication in this format. You can test the hook from here, and confirm that there is a result under the ‘Github Hook Log’ section of your Jenkins project (it’s in the left column).
