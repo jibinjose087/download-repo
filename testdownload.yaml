@@ -1,6 +1,4 @@
 ---
-- name: Ping
-  command: date
 - name: Print message
   debug: msg="Hello from Ansible!!"
 - name: Download Tomcat
