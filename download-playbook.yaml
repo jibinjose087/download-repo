@@ -8,6 +8,6 @@
     - name: download a file from git repo
       get_url:
         url: https://raw.githubusercontent.com/jibinjose087/demorepo/master/demorepo-master.zip
-        dest: /tmp/
-  #      force: true
-        thirsty: yes
+        dest: /tmp/demorepo-master.zip
+        force: yes
+        copy: yes
