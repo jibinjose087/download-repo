@@ -5,7 +5,7 @@
     job_template_id: 18
  
   tasks:
-    - name: create additional node in GCE
+    - name: Invoke download Job job_templates
       uri:
         url: https://18.216.19.92/api/v1/job_templates/{{ job_template_id }}/launch/
         method: POST
@@ -14,5 +14,5 @@
         validate_certs: no
         body: 
         body_format: json
-        status_code: 202
+#        status_code: 202
         validate_certs: no
