@@ -1,7 +1,7 @@
 ---
 - name: GET check
   hosts: all
-  become: true
+ # become: true
   vars:
     job_template_id: 18
  
