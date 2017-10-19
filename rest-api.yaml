@@ -19,5 +19,5 @@
         password: ansible@123
         force_basic_auth: yes
         validate_certs: no
-        status_code: 202
+        status_code: 200
         body_format: json
