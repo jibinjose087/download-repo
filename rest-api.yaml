@@ -1,6 +1,7 @@
 ---
-- name: POST to Tower API
+- name: POST check
   hosts: all
+  become: true
   vars:
     job_template_id: 18
  
@@ -8,11 +9,10 @@
     - name: Invoke download Job job_templates
       uri:
         url: https://18.216.19.92/api/v1/job_templates/18/launch/
-        method: GET
+        method: POST
         user: admin
         password: ansible@123
         force_basic_auth: yes
         validate_certs: no
-        body_format: json
         status_code: 204
-        become: true
+        body_format: json
