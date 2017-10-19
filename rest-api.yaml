@@ -8,7 +8,7 @@
     - name: Invoke download Job job_templates
       uri:
         url: https://18.216.19.92/api/v1/job_templates/18/launch/
-        method: POST
+        method: GET
         user: admin
         password: ansible@123
         force_basic_auth: yes
