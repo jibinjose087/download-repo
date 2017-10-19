@@ -10,7 +10,7 @@
       uri:
         url: https://127.0.0.1/api/v2/job_templates/18/launch/
         method: GET
-        status_code: 200
+   #     status_code: 200
         url: https://127.0.0.1/api/v2/job_templates/18/launch/
         method: POST
         user: admin
