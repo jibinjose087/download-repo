@@ -22,4 +22,4 @@
         register: get_check
 
     - name: echo the timestamp
-      command: echo ${{ get_check.TOWER_URL_BASE }}
+      command: echo ${get_check.stdout}
