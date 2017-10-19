@@ -13,7 +13,7 @@
         status_code: 200
         url: https://127.0.0.1/api/v2/job_templates/18/launch/
         method: POST
-        status_code: 202
+        status_code: 201
         user: admin
         password: ansible@123
         force_basic_auth: yes
