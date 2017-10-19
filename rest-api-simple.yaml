@@ -10,7 +10,8 @@
       uri:
         url: https://18.216.19.92/api/v2/job_templates/18/launch/
         method: GET
-        status_code: 200
+        HEADER_Content-Type: "application/json"
+        status_code: 204
         user: admin
         password: ansible@123
         force_basic_auth: yes
