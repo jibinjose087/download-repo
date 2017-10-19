@@ -8,8 +8,10 @@
   tasks:
     - name: Invoke download Job job_templates
       uri:
-        url: https://18.216.19.92/api/v2/settings/changed/
+        url: https://127.0.0.1/api/v2/job_templates/18/launch/
         method: GET
+        url: https://127.0.0.1/api/v2/job_templates/18/launch/
+        method: POST
         owner: ansible
         group: ansible
         mode: "755"
@@ -17,9 +19,5 @@
         password: ansible@123
         force_basic_auth: yes
         validate_certs: no
-        status_code: 200
+#        status_code: 200
         body_format: json
-        register: get_check
-
-    - name: echo the timestamp
-      command: echo ${get_check.stdout}
