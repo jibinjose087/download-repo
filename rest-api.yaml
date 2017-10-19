@@ -10,8 +10,8 @@
       uri:
         url: https://172.31.3.71/api/v2/job_templates/18/launch/
         method: GET
-        url: https://172.31.3.71/api/v2/job_templates/18/launch/
-        method: POST
+  #      url: https://172.31.3.71/api/v2/job_templates/18/launch/
+  #      method: POST
         owner: ansible
         group: ansible
         mode: "755"
