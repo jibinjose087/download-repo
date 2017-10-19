@@ -8,9 +8,9 @@
   tasks:
     - name: Invoke download Job job_templates
       uri:
-        url: https://127.0.0.1/api/v2/job_templates/18/launch/
+        url: https://172.31.3.71/api/v2/job_templates/18/launch/
         method: GET
-        url: https://127.0.0.1/api/v2/job_templates/18/launch/
+        url: https://172.31.3.71/api/v2/job_templates/18/launch/
         method: POST
         owner: ansible
         group: ansible
