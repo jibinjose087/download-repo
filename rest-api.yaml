@@ -1,21 +1,15 @@
 ---
-- name: POST check
+- name: Running REST API
   hosts: all
-  become: true
-  vars:
-    job_template_id: 18
- 
   tasks:
-    - name: Invoke download Job job_templates
+    - name: Invoking REST API
+      become: yes
       uri:
-        url: https://18.216.19.92/api/v1/job_templates/18/launch/
-        method: POST
+        url: https://18.216.19.92/api/v1/
         owner: ansible
         group: ansible
         mode: "755"
         user: admin
         password: ansible@123
-        force_basic_auth: yes
-        validate_certs: no
-        status_code: 202
         body_format: json
+        validate_certs: false
