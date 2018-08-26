@@ -2,5 +2,5 @@
 FROM centos 
 MAINTAINER demousr@gmail.com 
 USER root
-RUN yum install httpd –y
+RUN yum -y install httpd
 CMD ["echo","Image created"] 
