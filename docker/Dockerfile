@@ -1,7 +1,6 @@
 #This is a sample Image 
-FROM ubuntu 
+FROM centos 
 MAINTAINER demousr@gmail.com 
-
-RUN apt-get update 
-RUN apt-get install –y nginx 
+USER root
+RUN yum install –y httpd 
 CMD [“echo”,”Image created”] 
